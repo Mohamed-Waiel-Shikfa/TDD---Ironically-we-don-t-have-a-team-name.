@@ -67,6 +67,7 @@ def add(s: str) -> str:
     total = 0
 
     for i in s.split(","):
-        total += Decimal(i)
+      for j in i.split("\n"):
+        total += Decimal(j)
 
     return str(total)
