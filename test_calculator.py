@@ -68,5 +68,5 @@ def test_newline_delimiter():
     assert add("1\n2\n3\n4") == "10", "Failed on 1+2+3+4==10"
     assert add("1.1\n2.2,3.3") == "6.6", "Failed on 1.1+2.2+3.3==6.6"
     assert add("1.1\n2.2\n3.3") == "6.6", "Failed on 1.1+2.2+3.3==6.6"
-    assert add("1.1\n2.2,3.3\n4.4") == "11", "Failed on 1.1+2.2+3.3+4.4==11"
-    assert add("1.1\n2.2\n3.3\n4.4") == "11", "Failed on 1.1+2.2+3.3+4.4==11"
+    assert add("1.1\n2.2,3.3\n4.4") == "11.0", "Failed on 1.1+2.2+3.3+4.4==11.0"
+    assert add("1.1\n2.2\n3.3\n4.4") == "11.0", "Failed on 1.1+2.2+3.3+4.4==11.0"
