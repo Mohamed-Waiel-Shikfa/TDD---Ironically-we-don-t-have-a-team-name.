@@ -49,7 +49,8 @@ def test_many_numbers_2():
             number = random.randint(0,13000)
             numbers.append(number)
         input = ""
-        input += f"{num}," for num in numbers[:-1]
+        for num in numbers[:-1]:
+            input += f"{num},"
         input += str(numbers[-1])
         total = sum(numbers)
         failMessage = input.replace(",", "+")
