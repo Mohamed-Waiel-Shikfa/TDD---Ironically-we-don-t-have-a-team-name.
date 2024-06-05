@@ -30,6 +30,10 @@ Example:
     >>> add("//;\\n1;2")
     '3'
 """
+
+import math
+from decimal import Decimal
+
 def add(s: str) -> str:
     """
     Adds numbers in a given string.
@@ -56,4 +60,13 @@ def add(s: str) -> str:
         '6'
         >>>
     """
-    return "7"  # TODO: Implement the function logic.
+
+    if s == "":
+        return "0"
+    
+    total = 0
+
+    for i in s.split(","):
+        total += Decimal(i)
+
+    return str(total)
