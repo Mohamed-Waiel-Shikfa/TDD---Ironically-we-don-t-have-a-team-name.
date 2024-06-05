@@ -21,4 +21,4 @@ def test_basic_add():
     assert add("5,2") == "7", "Failed on 5+2==7"
     assert add("") == "0", "Failed on empty string"
     assert add("1.1, 2.2") == "3.3", "Failed on 1.1+2.2==3.3"
-    assert add("1,6,7) == "14", "Failed on 1+6+7==14"
+    assert add("1,6,7") == "14", "Failed on 1+6+7==14"
