@@ -38,8 +38,8 @@ def test_many_numbers_1():
         total1 = val1+val2+val3+val4
         total2 = val1+val2+val3+val4+val5
         assert add(f"{val1},{val2},{val3}") == f"{total}", f"Failed on {val1} + {val2} + {val3} == {total}"
-        assert add(f"{val1},{val2},{val3},{val4}") == f"{total}", f"Failed on {val1} + {val2} + {val3} + {val4} == {total1}"
-        assert add(f"{val1},{val2},{val3},{val4},{val5}") == f"{total}", f"Failed on {val1} + {val2} + {val3} + {val4} + {val5} == {total2}"
+        assert add(f"{val1},{val2},{val3},{val4}") == f"{total1}", f"Failed on {val1} + {val2} + {val3} + {val4} == {total1}"
+        assert add(f"{val1},{val2},{val3},{val4},{val5}") == f"{total2}", f"Failed on {val1} + {val2} + {val3} + {val4} + {val5} == {total2}"
 
 def test_many_numbers_2():
     for i in range(20):
