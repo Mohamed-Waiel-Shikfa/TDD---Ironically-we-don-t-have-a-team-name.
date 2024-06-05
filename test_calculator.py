@@ -52,7 +52,7 @@ def test_many_numbers_2():
         for num in numbers[:-1]:
             input += f"{num},"
         input += str(numbers[-1])
-        total = sum(numbers)
+        total = str(sum(numbers))
         failMessage = input.replace(",", "+")
         assert add(input) == total, f"Failed on {failMessage} == {total}"
 
