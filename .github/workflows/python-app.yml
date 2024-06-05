@@ -9,7 +9,7 @@ on:
       - '**'  # Enables the action on all branches
   pull_request:
     branches:
-      - '**'  # Enables the action on all branches
+      - '**'  # Enables the action on all branches
 
 permissions:
   contents: read
