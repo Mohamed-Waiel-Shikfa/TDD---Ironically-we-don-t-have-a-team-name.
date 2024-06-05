@@ -22,3 +22,22 @@ def test_basic_add():
     assert add("") == "0", "Failed on empty string"
     assert add("1.1, 2.2") == "3.3", "Failed on 1.1+2.2==3.3"
     assert add("1,6,7") == "14", "Failed on 1+6+7==14"
+
+
+def test_newline_delimiter():
+    """
+        Tests newline delimiter
+    """
+    assert add("1\n2,3") == "6", "Failed on 1+2+3==6"
+    assert add("1\n2\n3") == "6", "Failed on 1+2+3==6"
+    assert add("1\n2,3\n4") == "10", "Failed on 1+2+3+4==10"
+    assert add("1\n2\n3\n4") == "10", "Failed on 1+2+3+4==10"
+    assert add("1.1\n2.2,3.3") == "6.6", "Failed on 1.1+2.2+3.3==6.6"
+    assert add("1.1\n2.2\n3.3") == "6.6", "Failed on 1.1+2.2+3.3==6.6"
+    assert add("1.1\n2.2,3.3\n4.4") == "11", "Failed on 1.1+2.2+3.3+4.4==11"
+    assert add("1.1\n2.2\n3.3\n4.4") == "11", "Failed on 1.1+2.2+3.3+4.4==11"
+
+
+
+
+
